@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <title>χ²分布</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1><span class="chi-math">χ</span>²分布</h1>
+
+    <div id="controls">
+        <label>
+            自由度:
+            <input type="number" id="dof-input" value="4" min="1" step="1">
+        </label>
+        <label>
+            有意水準α (%):
+            <input type="number" id="alpha-input" value="5" min="0.1" max="50" step="0.1">
+        </label>
+        <button id="download-btn">SVGをダウンロード</button>
+    </div>
+
+    <svg id="chi2-svg" width="600" height="400" viewBox="0 0 600 400"></svg>
+    <script src="./main.js"></script>
+</body>
+</html>
